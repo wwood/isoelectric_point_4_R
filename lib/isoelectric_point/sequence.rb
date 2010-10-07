@@ -13,7 +13,7 @@ module IsoelectricPoint
       raise ArgumentError.new("sequence is required") if sequence.nil? || sequence.strip == ''
       @pks = PkaData::PKAS[pka_set_name]
       @value = sequence.upcase.gsub(/\s/, '')
-      raise ArgumentError.new("pka_set '#{pka_set_name}' is unknown. Please specify one of #{Data::PKAS.keys.join(', ')}") unless self.pks
+      raise ArgumentError.new("pka_set '#{pka_set_name}' is unknown. Please specify one of #{PkaData::PKAS.keys.join(', ')}") unless self.pks
     end
 
     def calculate_iep(places = 2)

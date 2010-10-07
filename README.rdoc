@@ -1,5 +1,5 @@
 == isoelectric_point
-A ruby class for calculating the isoelectric point of a protein. It's based on bioperl and the library from GeorgeG.
+A ruby class for calculating the isoelectric point of a protein. It's based on bioperl.
 
 = PKA Sets
 The available pka sets are:
@@ -16,7 +16,8 @@ The available pka sets are:
  require 'isoelectric_point'
  # Either prefix or include namespace
  include IsoelectricPoint
- #initialize a pka clculator object with dtaselect pkas and the KKGFTCGELA as an amino acid sequence
+
+ #initialize a pka calculator object with dtaselect pkas and the KKGFTCGELA as an amino acid sequence
  sequence = Sequence.new("KKGFTCGELA")
 
  #what is the protein charge at ph 14?
