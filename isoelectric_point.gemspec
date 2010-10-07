@@ -21,11 +21,11 @@ Gem::Specification.new do |s|
      "lib/isoelectric_point/extensions.rb",
      "lib/isoelectric_point/sequence.rb",
   ]
-  s.homepage = %q{http://github.com/simplificator/isoelectric_point}
+  s.homepage = %q{http://github.com/GeorgeG/isoelectric_point_4_R}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Calculate isoelectric point. Based on code frmo GeorgeR. We just took it and made a gem of it.}
+  s.summary = %q{Calculate isoelectric point.}
   s.test_files = [
     "test/sequence_test.rb",
     "test/extensions_test.rb",
