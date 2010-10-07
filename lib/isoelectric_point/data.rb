@@ -1,5 +1,5 @@
 module IsoelectricPoint
-  module Data
+  module PkaData
     PKAS = {
       'dtaselect' => { "N_TERMINUS" => 8.0,
                         "K" => 10.0,

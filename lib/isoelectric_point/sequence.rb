@@ -11,7 +11,7 @@ module IsoelectricPoint
     def initialize(sequence, pka_set_name = 'dtaselect')
       raise ArgumentError.new("pka_set_name is required") if pka_set_name.nil? || pka_set_name.strip == ''
       raise ArgumentError.new("sequence is required") if sequence.nil? || sequence.strip == ''
-      @pks = Data::PKAS[pka_set_name]
+      @pks = PkaData::PKAS[pka_set_name]
       @value = sequence.upcase.gsub(/\s/, '')
       raise ArgumentError.new("pka_set '#{pka_set_name}' is unknown. Please specify one of #{Data::PKAS.keys.join(', ')}") unless self.pks
     end
