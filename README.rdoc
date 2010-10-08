@@ -4,28 +4,21 @@ It's currently been refactored to fit as a bioruby plugin. It can be installed a
 
 
 == PKA Sets
-The available pka sets are:
+Support for the following Pka sets is available
 * dta_select
 * emboss
 * rodwell
 * wikipedia
 * sillero
 
+You can also create a custom Pka set as shown in the example
+
 == Installation
  gem install 'bio'
  gem install 'isoelectric_point'
 
 == Usage
- require 'isoelectric_point'
-
- # Either prefix or include namespace
- include Bio::Sequence
-
- aa = Bio::Sequence::AA.new("KKGFTCGELA")
-
- using bioruby
-
-	require 'bio'
+ 	require 'bio'
 	require 'isoelectric_point'
 		
 	aa = Bio::Sequence::AA.new("KKGFTCGELA")
@@ -49,7 +42,6 @@ The available pka sets are:
           }
  ph = aa.calculate_iep(custom, 3)        #=> 8.193 
 
-Enjoy! 
 
 == Authors
  George Githinji -- KEMRI-Wellcome Trust Research program
