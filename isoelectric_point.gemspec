@@ -2,11 +2,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{isoelectric_point}
-  s.version = "0.0.3"
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ['GeorgeG', "pascalbetz"]
+<<<<<<< HEAD
   s.date = %q{2010-10-05}
+=======
+  s.date = %q{2010-10-07}
+>>>>>>> 1fa9021c299db846f7871fdb120af0f772ae27db
   s.description = %q{Calculate the Isoelectric point}
   s.email = %q{info@simplificator.com}
   s.extra_rdoc_files = [
@@ -17,9 +21,9 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "lib/isoelectric_point.rb",
-     "lib/isoelectric_point/data.rb",
+     "lib/isoelectric_point/pka_data.rb",
      "lib/isoelectric_point/extensions.rb",
-     "lib/isoelectric_point/sequence.rb",
+     "lib/isoelectric_point/aa.rb",
   ]
   s.homepage = %q{http://github.com/GeorgeG/isoelectric_point_4_R}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -27,7 +31,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Calculate isoelectric point.}
   s.test_files = [
-    "test/sequence_test.rb",
+    "test/aa_test.rb",
     "test/extensions_test.rb",
     "test/test_helper.rb"
 
@@ -49,4 +53,3 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<mocha>, [">= 0"])
   end
 end
-
