@@ -21,7 +21,8 @@ The available pka sets are:
  include Bio::Sequence
  aa = AA.new("KKGFTCGELA")
 
-or if you are using bioruby,
+
+using bioruby
 
 	require 'bio'
 	require 'isoelectric_point'
@@ -29,10 +30,10 @@ or if you are using bioruby,
 	aa = Bio::Sequence::AA.new("KKGFTCGELA")
 
  #what is the protein charge at ph 14?
- charge = aa.calculate_charge_at(14)
+ charge = aa.calculate_charge_at(14)     #=>-2.999795857467562
 
  #calculate the ph using dtaselect and round off to 3 decimal places
- ph = aa.calculate_iep('dtaselect', 3)
+ ph = aa.calculate_iep('dtaselect', 3)   #=>8.219
 
  # calculate the ph with a custom set
  custom = { "N_TERMINUS" => 8.1,
@@ -45,4 +46,6 @@ or if you are using bioruby,
             "C" => 8.33,
             "Y" => 9.5
           }
- ph = aa.calculate_iep(custom, 3)
+ ph = aa.calculate_iep(custom, 3)        #=> 8.193 
+
+Enjoy! 
