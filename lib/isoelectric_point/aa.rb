@@ -74,7 +74,7 @@ module Bio
         if pka_name_or_set.is_a?(Hash)
           pka_name_or_set
         else
-          set = PkaData::PKAS[pka_name_or_set]
+          set = Bio::Sequence::PkaData::PKAS[pka_name_or_set]
           raise ArgumentError.new("Set '#{pka_name_or_set}' is unknown. Please specify one of #{PkaData::PKAS.keys.join(', ')} or pass a custom set") unless set
           set
         end #if

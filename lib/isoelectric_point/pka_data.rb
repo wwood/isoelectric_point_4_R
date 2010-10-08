@@ -1,6 +1,6 @@
 module Bio
-  module Sequence
-    module PkaData
+  class Sequence
+    class PkaData
       PKAS = {
         'dtaselect' => { 'N_TERMINUS' => 8.0,
                           'K' => 10.0,
