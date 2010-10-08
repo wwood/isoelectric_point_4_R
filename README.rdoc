@@ -1,6 +1,6 @@
 = isoelectric_point
-A ruby class for calculating the isoelectric point of a protein. It's based on bioperl.
-It's currently beeing refactored to fit into bioruby.
+A ruby plugin for calculating the isoelectric point of a protein. It's based on bioperl.
+It's currently been refactored to fit into bioruby or as a bioruby plugin.
 
 
 == PKA Sets
