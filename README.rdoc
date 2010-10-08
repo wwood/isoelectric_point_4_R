@@ -21,6 +21,11 @@ The available pka sets are:
  include Bio::Sequence
  aa = AA.new("KKGFTCGELA")
 
+or if you are using bioruby
+	require 'bio'
+	require 'isoelectric_point'
+		
+	aa = Bio::Sequence::AA.new("KKGFTCGELA")
 
  #what is the protein charge at ph 14?
  charge = aa.calculate_charge_at(14)
