@@ -5,12 +5,12 @@ Gem::Specification.new do |s|
   s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ['GeorgeG', "pascalbetz"]
+  s.authors = ["GeorgeG", "pascalbetz"]
   s.date = %q{2010-10-07}
   s.description = %q{Calculate the Isoelectric point}
-  s.email = %q{info@simplificator.com}
+  s.email = ['info@simplificator.com','georgkam@gmail.com']
   s.extra_rdoc_files = [
-    "LICENSE",
+     "LICENSE",
      "README.rdoc"
   ]
   s.files = [
@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Calculate isoelectric point.}
+  s.summary = %q{Calculate the iso-electric point of a protein sequence.}
   s.test_files = [
     "test/aa_test.rb",
     "test/extensions_test.rb",

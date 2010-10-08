@@ -1,6 +1,6 @@
 = isoelectric_point
-A ruby plugin for calculating the isoelectric point of a protein. It's based on bioperl.
-It's currently been refactored to fit into bioruby or as a bioruby plugin.
+A bioruby plugin for calculating the isoelectric point of a protein. It's based on bioperl.
+It's currently been refactored to fit as a bioruby plugin. It can be installed as a gem and requires bioruby
 
 
 == PKA Sets
@@ -12,17 +12,17 @@ The available pka sets are:
 * sillero
 
 == Installation
- gem install isoelectric_point
+ gem install 'bio'
+ gem install 'isoelectric_point'
 
 == Usage
  require 'isoelectric_point'
  # Either prefix or include namespace
 
  include Bio::Sequence
- aa = AA.new("KKGFTCGELA")
+ aa = Bio::Sequence::AA.new("KKGFTCGELA")
 
-
-using bioruby
+ using bioruby
 
 	require 'bio'
 	require 'isoelectric_point'
@@ -49,3 +49,7 @@ using bioruby
  ph = aa.calculate_iep(custom, 3)        #=> 8.193 
 
 Enjoy! 
+
+== Authors
+George Githinji -- KEMRI-Wellcome Trust Research program
+Pascal Betz     -- Simplificator GmbH 

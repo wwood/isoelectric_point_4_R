@@ -1,5 +1,6 @@
 require 'test_helper'
-include Bio::Sequence
+
+# include Bio::Sequence
 class AATest < Test::Unit::TestCase
 
   context 'some known sequences' do
@@ -26,7 +27,7 @@ class AATest < Test::Unit::TestCase
     should 'calculate iep' do
       places = 2
       @known.each do |sequence, expected|
-        actual = AA.new(sequence).calculate_iep('dtaselect', places)
+        actual = Bio::Sequence::AA.new(sequence).calculate_iep('dtaselect', places)
         assert_equal expected.round_to_places(places), actual, "Expected the iep to be #{expected} but was #{actual} for #{sequence}"
       end
     end
@@ -34,26 +35,26 @@ class AATest < Test::Unit::TestCase
 
   should "Raise if not sequence given" do
     assert_raise ArgumentError do
-      AA.new(nil)
+      Bio::Sequence::AA.new(nil)
     end
   end
 
   should "Raise if empty sequence given" do
     assert_raise ArgumentError do
-      AA.new(' ')
+      Bio::Sequence::AA.new(' ')
     end
   end
 
 
   should "Raise if unknown pks used" do
     assert_raise ArgumentError do
-      AA.new('PG', 'youdontknowme')
+      Bio::Sequence::AA.new('PG', 'youdontknowme')
     end
   end
 
   context "a Sequence" do
     setup do
-      @sequence = AA.new("PGAKAAAKKPKKAAG")
+      @sequence = Bio::Sequence::AA.new("PGAKAAAKKPKKAAG")
     end
 
     should "calculates the isolectric point to 0 places" do
