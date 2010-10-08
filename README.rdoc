@@ -1,6 +1,8 @@
 = isoelectric_point
-A bioruby plugin for calculating the isoelectric point of a protein. It's based on bioperl.
-It's currently been refactored to fit as a bioruby plugin. It can be installed as a gem and requires bioruby
+The isoelectric point (pI), sometimes abbreviated to IEP, is the pH at which a particular molecule or surface carries no net electrical charge.
+
+This library is a ruby implementation for calculating the iep and it is based on bioperl's approach.
+It's currently been refactored to fit as a bioruby plugin. It can be installed as a gem. 
 
 
 == PKA Sets
@@ -18,16 +20,17 @@ You can also create a custom Pka set as shown in the example
  gem install 'isoelectric_point'
 
 == Usage
- 	require 'bio'
-	require 'isoelectric_point'
+ require 'bio'
+ require 'isoelectric_point'
 		
-	aa = Bio::Sequence::AA.new("KKGFTCGELA")
+ aa = Bio::Sequence::AA.new("KKGFTCGELA")
 
  #what is the protein charge at ph 14?
  charge = aa.calculate_charge_at(14)     #=>-2.999795857467562
 
  #calculate the ph using dtaselect and round off to 3 decimal places
- ph = aa.calculate_iep('dtaselect', 3)   #=>8.219
+
+ isoelectric_point = aa.calculate_iep('dtaselect', 3)   #=>8.219
 
  # calculate the ph with a custom set
  custom = { "N_TERMINUS" => 8.1,
