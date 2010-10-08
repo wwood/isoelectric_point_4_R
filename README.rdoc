@@ -43,7 +43,7 @@ You can also create a custom Pka set as shown in the example
             "C" => 8.33,
             "Y" => 9.5
           }
- iep_ph = aa.calculate_iep(custom, 3)        #=> 8.193 
+ iep_ph = protein_seq.calculate_iep(custom, 3)        #=> 8.193 
 
 
 == Authors
