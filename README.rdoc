@@ -17,9 +17,10 @@ The available pka sets are:
 
 == Usage
  require 'isoelectric_point'
- # Either prefix or include namespace
 
+ # Either prefix or include namespace
  include Bio::Sequence
+
  aa = Bio::Sequence::AA.new("KKGFTCGELA")
 
  using bioruby
@@ -51,5 +52,5 @@ The available pka sets are:
 Enjoy! 
 
 == Authors
-George Githinji -- KEMRI-Wellcome Trust Research program
-Pascal Betz     -- Simplificator GmbH 
+ George Githinji -- KEMRI-Wellcome Trust Research program
+ Pascal Betz     -- Simplificator GmbH 
