@@ -1,6 +1,6 @@
 module Bio
-  module Sequence
-    class AA < String
+  class Sequence
+    class AA
       CHARGED_GROUPS = ['K', 'R', 'H', 'D', 'E', 'C', 'Y']
 
       def initialize(sequence)
@@ -77,8 +77,8 @@ module Bio
           set = PkaData::PKAS[pka_name_or_set]
           raise ArgumentError.new("Set '#{pka_name_or_set}' is unknown. Please specify one of #{PkaData::PKAS.keys.join(', ')} or pass a custom set") unless set
           set
-        end
-      end
-    end
-  end
-end
+        end #if
+      end #select_pka
+    end #class AA
+  end #class Sequence
+end #module Bio

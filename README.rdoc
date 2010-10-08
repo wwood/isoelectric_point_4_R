@@ -21,7 +21,8 @@ The available pka sets are:
  include Bio::Sequence
  aa = AA.new("KKGFTCGELA")
 
-or if you are using bioruby
+or if you are using bioruby,
+
 	require 'bio'
 	require 'isoelectric_point'
 		
