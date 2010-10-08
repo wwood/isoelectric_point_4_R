@@ -47,5 +47,7 @@ You can also create a custom Pka set as shown in the example
 
 
 == Authors
- George Githinji -- KEMRI-Wellcome Trust Research program
+ George Githinji -- KEMRI-Wellcome Trust Research program (georgkam@gmail.com)
  Pascal Betz     -- Simplificator GmbH 
+
+Copyright (C) 2010 George Githinji
