@@ -6,11 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ['GeorgeG', "pascalbetz"]
-<<<<<<< HEAD
-  s.date = %q{2010-10-05}
-=======
   s.date = %q{2010-10-07}
->>>>>>> 1fa9021c299db846f7871fdb120af0f772ae27db
   s.description = %q{Calculate the Isoelectric point}
   s.email = %q{info@simplificator.com}
   s.extra_rdoc_files = [
