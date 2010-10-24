@@ -11,7 +11,7 @@ module Bio
       # Calculate the Isoelectric Point
       # pka_name_or_set: the name of a PKA set or a custom PKA set
       # places: specify the number of decimal places the value should be rounded to.
-      # loop_limit: how man iterations should be made to find the point. You should not need to tweak this.
+      # loop_limit: how many iterations should be made to find the point. You should not need to tweak this.
       def calculate_iep(pka_name_or_set = 'dtaselect', places = 2, loop_limit = 100)
         loops = 0
         ph = 7.5
@@ -55,9 +55,9 @@ module Bio
         x / (x + 1).to_f
       end
 
-      # Count the occurences of the charged groups in the AA.
+      # Count the occurrences of the charged groups in the AA.
       # Returns a Hash where the key is the group and the value is the number of
-      # occurences in self.
+      # occurrences in self.
       def calculate_charged_residue_frequencies
         CHARGED_GROUPS.inject(Hash.new(0)) do |memo, item|
           memo[item] = self.count(item)
